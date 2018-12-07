@@ -17,7 +17,7 @@ public class Connector {
     public static Connection getConnection(){
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/fos","root","@satya123");
+            con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/fos","username","password");
             
         }catch(Exception e){
             System.out.println(e.getMessage());
